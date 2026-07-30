@@ -1,7 +1,7 @@
 resource "azurerm_resource_group" "myrg" {
 
   for_each = var.rg_details
-  name     = each.value.name
+  name1tyagi     = each.value.name
   location = each.value.location
 
 }
