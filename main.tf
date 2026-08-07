@@ -1,4 +1,4 @@
-resource "azurerm_resource_group" "myrg" {
+source "azurerm_resource_group" "myrg" {
 
   for_each = var.rg_details
   name1tyagi     = each.value.name
@@ -7,7 +7,8 @@ resource "azurerm_resource_group" "myrg" {
 }
 
 
-Tyagi my name is
+My name is tyagi'
+}|{{
 
 resource "azurerm_virtual_network" "myvnet" {
     for_each = var.vnet_details
