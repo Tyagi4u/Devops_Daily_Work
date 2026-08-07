@@ -6,6 +6,9 @@ resource "azurerm_resource_group" "myrg" {
 
 }
 
+
+Tyagi my name is
+
 resource "azurerm_virtual_network" "myvnet" {
     for_each = var.vnet_details
   name                = each.value.name
